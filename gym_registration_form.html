@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gym Registration Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="row">
+  <div class="col-75">
+    <div class="container1">
+      <center><h2>Gym Registration Form</h2></center>
+      <form action="submit_phpcrm_form.php" method="POST">
+        <div class="row">
+          <div class="col-50">
+            <input type="text" id="name" required name="name" placeholder="Name">  
+          </div>
+          <div class="col-50">
+          <input type="radio" required name="gender" value="MALE">MALE &nbsp;&nbsp;&nbsp;
+          <input type="radio"required  name="gender" value="FEMALE">FEMALE
+          </div> 
+         </div>
+      <div class="row">
+        <div class="col-50">
+            <input type="email" name="email" required placeholder="Email">
+        </div>
+        <div class="col-50">
+          <input type="number" name="phone" required placeholder="Phone">
+      </div>
+      </div>
+    <div class="row">
+      <div class="col-50">
+        <input type="text" id="name" required  name="current_wt" placeholder="Your current weight (lbs)">  
+      </div>     
+       <div class="col-50">
+       <input type="text" id="name" required name="desire_wt" placeholder="Desired weight (lbs)">  
+    </div>     
+     </div>
+     <div class="row">
+        <div class="col-50">
+          <input type="text" name="height" required placeholder="Height">
+        </div>
+       <div class="col-50">
+         <input type="text" name="BMI" placeholder="BMI">
+      </div>
+     </div>
+      <div class="row">
+        <div class="col-50">
+          <textarea name="address" id="address"  rows="2" placeholder="Address"></textarea>
+        </div>     
+   </div>
+   <div class="row">
+       <div class="col-50">
+           <input type="text" name="city" required placeholder="City">
+       </div>
+       <div class="col-50">
+          <input type="text" name="state" required placeholder="State">
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-50">
+          <input type="number" name="zip_code" required placeholder="Zip Code">
+      </div>
+      <div class="col-50">
+         <input type="text" name="country" required placeholder="Country">
+     </div>
+  </div>
+    <div class="row">
+      <div class="col-50">
+        <label>Do you require a personal trainer?</label><br><br>
+         <input type="radio" name="personal_trainer" value="Yes"> Yes <br><br>
+         <input type="radio" name="personal_trainer" value="No"> No <br><br>
+      </div>
+      <div class="col-50">
+        <label>Have you been in a Gym before?</label><br><br>
+         <input type="radio" required name="gym_before" value="Yes"> Yes <br><br>
+         <input type="radio" required name="gym_before" value="No"> No <br><br>
+      </div>
+    </div>
+        <input type="submit" value="Apply" class="btn">
+       </div>
+       </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
